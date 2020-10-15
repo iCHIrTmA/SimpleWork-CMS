@@ -24,7 +24,7 @@ Route::get('/about', function () {
     ]); 
 });
 
-Route::get('/articles', 'App\Http\Controllers\ArticlesController@index');
+Route::get('/articles', 'App\Http\Controllers\ArticlesController@index')->name('articles.index');
 Route::post('/articles', 'App\Http\Controllers\ArticlesController@store');
 Route::get('/articles/create', 'App\Http\Controllers\ArticlesController@create');
 Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show')->name('articles.show');
