@@ -41,6 +41,6 @@ class ArticlesController extends Controller
     		'body' => 'required',
     	]));
 
-    	return redirect('/articles/' . $article->id);
+    	return redirect($article->path());
     }
 }
